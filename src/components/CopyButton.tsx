@@ -7,10 +7,15 @@ import { poppins } from '@/assets/fonts/poppins';
 
 type CopyButtonProps = {
   children: ReactNode;
+  className?: string;
   text: string;
 };
 
-export const CopyButton = ({ text, children }: CopyButtonProps) => {
+export const CopyButton = ({
+  className = '',
+  children,
+  text,
+}: CopyButtonProps) => {
   const [toastIsVisible, setToastIsVisible] = useState(false);
 
   const copyToClipboard = async () => {
@@ -36,7 +41,7 @@ export const CopyButton = ({ text, children }: CopyButtonProps) => {
       )}
 
       <button
-        className={`btn-outline btn my-0 mx-auto w-full max-w-6xl border-2 text-lg font-bold text-gray-900 ${poppins.className}`}
+        className={`${className} btn-outline btn my-0 mx-auto w-full max-w-6xl border-2 text-lg font-bold text-gray-900 ${poppins.className}`}
         onClick={copyToClipboard}
       >
         {children}

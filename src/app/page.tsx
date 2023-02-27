@@ -13,18 +13,18 @@ export default async function Home() {
 
   return (
     <Container
-      className="flex h-screen max-h-screen flex-col justify-between overflow-visible"
+      className="relative flex h-screen max-h-screen flex-col justify-center overflow-visible"
       Wrapper={({ children }) => (
         <div className="relative overflow-hidden">{children}</div>
       )}
     >
-      <div />
-
       <p className="mt-[-4rem] text-center text-2xl font-bold uppercase">
         {phrase}
       </p>
 
-      <CopyButton text={phrase}>Copy</CopyButton>
+      <div className="fixed bottom-0 left-0 w-full p-8">
+        <CopyButton text={phrase}>Copy</CopyButton>
+      </div>
     </Container>
   );
 }
