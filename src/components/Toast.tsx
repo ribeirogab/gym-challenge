@@ -11,13 +11,17 @@ export const Toast = ({
   type = 'success',
   children,
 }: ToastProps) => {
-  const toastTypeClass = `alert-${type}`;
+  const types = {
+    success: 'alert-success',
+    error: 'alert-error',
+    info: 'alert-info',
+  };
 
   return (
     <div
       className={`
         ${containerClassName}
-        custom-alert-show
+        custom-alert-animation
         absolute
         bottom-32
         right-8
@@ -26,7 +30,7 @@ export const Toast = ({
         duration-200
       `}
     >
-      <div className={`alert ${toastTypeClass} w-full text-center`}>
+      <div className={`${types[type]} alert w-full text-center`}>
         {children}
       </div>
     </div>
