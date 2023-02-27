@@ -1,0 +1,54 @@
+@tailwind base;
+@import './custom-classes.css';
+
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    @apply text-gray-900;
+    
+  
+    background: linear-gradient(
+      to bottom,
+      #fef3e8,
+      #ffd5c2,
+      #ff9e9d,
+      #e56b6f,
+      #ab3e5b
+    );
+  }
+
+  body,
+  input,
+  textarea,
+  button {
+    font-family: 'Poppins';
+    font-weight: 500;
+  }
+
+  button {
+    font-family: 'Poppins';
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  h1 {
+    @apply text-2xl;
+  }
+
+  h2 {
+    @apply text-xl;
+  }
+
+  h3 {
+    @apply text-lg;
+  }
+}

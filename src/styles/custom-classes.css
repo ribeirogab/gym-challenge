@@ -1,0 +1,41 @@
+@keyframes alertHideAnimation {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes alertShowAnimation {
+  0% {
+    transform: translateX(18rem);
+  }
+
+  8% {
+    transform: translateX(0);
+  }
+
+  92% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(18rem);
+  }
+}
+
+.custom-alert-hide {
+  animation: alertHideAnimation 4s forwards;
+}
+
+.custom-alert-show {
+  animation: alertShowAnimation 4s forwards;
+}
+
+.custom-screen-100vh-without-header {
+  height: calc(100vh - 6rem);
+}
