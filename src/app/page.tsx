@@ -1,8 +1,9 @@
 import { Container } from '@/components/Container';
 import { CopyButton } from '@/components/CopyButton';
+import { publicUrl } from '@/constants';
 
 export default async function Home() {
-  const response = await fetch('http://localhost:3000/api/phrases', {
+  const response = await fetch(`${publicUrl}/api/phrases`, {
     method: 'GET',
     next: {
       revalidate: 10,
@@ -11,7 +12,7 @@ export default async function Home() {
   const { phrase } = await response.json();
 
   return (
-    <Container className="flex h-[100vh] flex-col justify-between">
+    <Container className="relative flex h-[100vh] flex-col justify-between overflow-hidden">
       <div />
 
       <p className="mt-[-4rem] text-center text-2xl font-bold uppercase">

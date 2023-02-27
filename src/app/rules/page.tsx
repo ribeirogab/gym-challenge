@@ -44,6 +44,8 @@ export default function Rules() {
 
       <p>O pagamento será feito no final da aposta. </p>
 
+      <hr />
+
       <h2>Data</h2>
       <p>Inicio da aposta: 27/02/2023</p>
       <p>Fim da aposta: 27/08/2023 </p>

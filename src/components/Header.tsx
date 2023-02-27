@@ -9,7 +9,7 @@ type HeaderProps = {
 export const Header = ({ className = '' }: HeaderProps) => {
   return (
     <header
-      className={`${className} mx-auto my-0 flex h-24 w-full items-center justify-center`}
+      className={`${className} z-10 mx-auto my-0 flex h-24 w-full items-center justify-center`}
     >
       <nav className="flex items-center justify-center gap-8">
         <Link href={PathsEnum.Home} className="text-lg">
