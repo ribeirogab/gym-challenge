@@ -13,7 +13,7 @@ export default async function Home() {
 
   return (
     <Container
-      className="flex h-[100vh] max-h-[100vh] flex-col justify-between overflow-visible"
+      className="flex h-screen max-h-screen flex-col justify-between overflow-visible"
       Wrapper={({ children }) => (
         <div className="relative overflow-hidden">{children}</div>
       )}
