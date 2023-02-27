@@ -13,7 +13,7 @@
   body {
     @apply text-gray-900;
     
-  
+    background-color: #fff;
     background: linear-gradient(
       to bottom,
       #fef3e8,
