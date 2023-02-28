@@ -3,6 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: false,
   theme: {
     fontFamily: {
       sans: ['Poppins', ...defaultTheme.fontFamily.sans],
@@ -29,5 +30,3 @@ module.exports = {
   },
   plugins: [require('daisyui')],
 };
-
-// primary #f27d34

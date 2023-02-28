@@ -22,7 +22,7 @@ const setup = async () => {
 
 const regeneratePhrase = async (oldData: Data) => {
   const date = new Date();
-  const phrase = faker.lorem.words(3).toLowerCase();
+  const phrase = faker.random.words(3).toLowerCase();
 
   date.setHours(0);
   date.setDate(date.getDate() + 1);

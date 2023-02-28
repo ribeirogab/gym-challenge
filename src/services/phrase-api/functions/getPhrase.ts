@@ -11,7 +11,7 @@ export const getPhrase = async (): Promise<GetPhraseResponse> => {
     method: 'GET',
     cache: 'no-cache',
     next: {
-      // revalidate: 60 * 60, // 1 hour (60 minutes)
+      revalidate: 60 * 60, // 1 hour (60 minutes)
     },
   });
 
