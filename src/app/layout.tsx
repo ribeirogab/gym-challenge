@@ -9,12 +9,12 @@ export const metadata = {
   description: 'tmp',
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout() {
   return (
     <html lang="pt-br">
       <body className={poppins.className}>
         {/* <Header className="absolute" /> */}
-        {children}
+        {/* {children} */}
       </body>
     </html>
   );
