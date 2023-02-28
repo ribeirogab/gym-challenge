@@ -41,7 +41,7 @@ export const CopyButton = ({
       )}
 
       <button
-        className={`${className} btn-outline btn my-0 mx-auto w-full max-w-6xl border-2 text-lg font-bold text-gray-900 ${poppins.className}`}
+        className={`${className} btn-outline btn my-0 mx-auto w-full max-w-6xl border-2 text-lg font-bold text-gray-900 ${poppins.className} lowercase`}
         onClick={copyToClipboard}
       >
         {children}

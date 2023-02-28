@@ -4,12 +4,13 @@ import path from 'path';
 import { faker } from '@faker-js/faker';
 import { NextResponse } from 'next/server';
 
+import { Phrase } from '@/interfaces';
+
 const DATA_PATH = path.join(process.cwd(), 'src/data/data.json');
 
-type Data = {
-  phrase: string;
-  expires: string;
-};
+interface Data extends Phrase {
+  history?: Phrase[];
+}
 
 const setup = async () => {
   const dataFileExists = existsSync(DATA_PATH);
@@ -19,34 +20,41 @@ const setup = async () => {
   }
 };
 
-const regeneratePhrase = async () => {
+const regeneratePhrase = async (oldData: Data) => {
   const date = new Date();
-  const phrase = faker.lorem.words(3);
+  const phrase = faker.lorem.words(3).toLowerCase();
 
   date.setHours(0);
   date.setDate(date.getDate() + 1);
 
-  await fs.writeFile(
-    DATA_PATH,
-    JSON.stringify({
-      expires: date.toISOString(),
-      phrase,
-    }),
-  );
+  const phraseData = {
+    expires: date.toISOString(),
+    phrase,
+  };
 
-  return { phrase };
+  const history = [...(oldData.history || []), phraseData];
+
+  await fs.writeFile(DATA_PATH, JSON.stringify({ ...phraseData, history }));
+
+  return { phrase, history };
 };
 
 export async function GET() {
   await setup();
 
-  const { expires, phrase }: Data = JSON.parse(
-    await fs.readFile(DATA_PATH, 'utf8'),
-  );
+  const {
+    history = [],
+    expires,
+    phrase,
+  }: Data = JSON.parse(await fs.readFile(DATA_PATH, 'utf8'));
 
-  if (!phrase || !expires || new Date() > new Date(expires)) {
-    return NextResponse.json(await regeneratePhrase());
+  const isExpired = !phrase || !expires || new Date() > new Date(expires);
+
+  if (!isExpired) {
+    return NextResponse.json({ phrase: phrase.toLowerCase(), history });
   }
 
-  return NextResponse.json({ phrase: phrase.toUpperCase() });
+  return NextResponse.json(
+    await regeneratePhrase({ expires, phrase, history }),
+  );
 }
