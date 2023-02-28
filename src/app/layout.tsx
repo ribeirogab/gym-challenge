@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
 import { poppins } from '@/assets/fonts/poppins';
-import { Header } from '@/components/Header';
+// import { Header } from '@/components/Header';
 import '@/styles/globals.css';
 
 export const metadata = {
@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-br">
       <body className={poppins.className}>
-        <Header className="absolute" />
+        {/* <Header className="absolute" /> */}
         {children}
       </body>
     </html>

@@ -2,7 +2,7 @@ import { Container } from '@/components/Container';
 
 export default function Rules() {
   return (
-    <Container className="flex flex-col gap-4">
+    <Container className="flex min-h-screen flex-col gap-4">
       <h1>Regras</h1>
 
       <p>
@@ -49,8 +49,6 @@ export default function Rules() {
       <h2>Data</h2>
       <p>Inicio da aposta: 27/02/2023</p>
       <p>Fim da aposta: 27/08/2023 </p>
-
-      <p>Regras em construção!</p>
     </Container>
   );
 }
