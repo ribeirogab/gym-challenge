@@ -9,9 +9,7 @@ type GetPhraseResponse = {
 export const getPhrase = async (): Promise<GetPhraseResponse> => {
   const response = await fetch(`${publicUrl}/api/phrases`, {
     method: 'GET',
-    next: {
-      revalidate: 60 * 60, // 1 hour (60 minutes)
-    },
+    cache: 'no-cache',
   });
 
   const { phrase, history = [] } = await response.json();

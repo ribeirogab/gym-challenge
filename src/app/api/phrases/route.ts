@@ -34,7 +34,10 @@ const regeneratePhrase = async (oldData: Data) => {
 
   const history = [...(oldData.history || []), phraseData];
 
-  await fs.writeFile(DATA_PATH, JSON.stringify({ ...phraseData, history }));
+  await fs.writeFile(
+    DATA_PATH,
+    JSON.stringify({ ...phraseData, history }, null, 2),
+  );
 
   return { phrase, history };
 };
