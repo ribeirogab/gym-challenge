@@ -25,6 +25,7 @@ const regeneratePhrase = async (oldData: Data) => {
   const phrase = faker.random.words(3).toLowerCase();
 
   date.setHours(0);
+  date.setMinutes(0);
   date.setDate(date.getDate() + 1);
 
   const phraseData = {
