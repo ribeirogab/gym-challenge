@@ -33,7 +33,11 @@ const regeneratePhrase = async (oldData: Data) => {
     phrase,
   };
 
-  const history = [...(oldData.history || []), phraseData];
+  const history = [
+    ...(oldData.history || []),
+    { expires: oldData.expires, phrase: oldData.phrase },
+    phraseData,
+  ];
 
   await fs.writeFile(
     DATA_PATH,
