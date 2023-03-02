@@ -10,6 +10,9 @@ export const getPhrase = async (): Promise<GetPhraseResponse> => {
   const response = await fetch(`${publicUrl}/api/phrases`, {
     method: 'GET',
     cache: 'no-cache',
+    next: {
+      revalidate: 60,
+    },
   });
 
   const { phrase, history = [] } = await response.json();
