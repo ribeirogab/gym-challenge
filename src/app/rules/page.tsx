@@ -6,6 +6,11 @@ export default function Rules() {
       <h1>Regras</h1>
 
       <p>
+        No caso de uma redução no número de dias, conforme decidido pela maioria
+        dos votos, o período mínimo estabelecido será de 3 dias.
+      </p>
+
+      <p>
         Exercitar-se 4 dias na semana por 6 meses, sendo que ao menos 2 dias
         precisam ser na academia.
       </p>
