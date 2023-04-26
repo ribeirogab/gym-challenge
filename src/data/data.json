@@ -1,6 +1,6 @@
 {
-  "expires": "2023-04-26T03:00:58.361Z",
-  "phrase": "molybdenum mexico gee",
+  "expires": "2023-04-27T03:00:48.760Z",
+  "phrase": "tradition metal pizza",
   "history": [
     {
       "expires": "2023-02-28T03:37:52.945Z",
@@ -173,6 +173,10 @@
     {
       "expires": "2023-04-26T03:00:58.361Z",
       "phrase": "molybdenum mexico gee"
+    },
+    {
+      "expires": "2023-04-27T03:00:48.760Z",
+      "phrase": "tradition metal pizza"
     }
   ]
 }
