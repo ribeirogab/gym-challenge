@@ -1,6 +1,6 @@
 {
-  "expires": "2023-05-03T03:00:53.024Z",
-  "phrase": "polestar mobility yippee",
+  "expires": "2023-05-04T03:00:13.924Z",
+  "phrase": "strategic twin boo",
   "history": [
     {
       "expires": "2023-02-28T03:37:52.945Z",
@@ -189,6 +189,10 @@
     {
       "expires": "2023-05-03T03:00:53.024Z",
       "phrase": "polestar mobility yippee"
+    },
+    {
+      "expires": "2023-05-04T03:00:13.924Z",
+      "phrase": "strategic twin boo"
     }
   ]
 }
