@@ -1,9 +1,8 @@
 import { Container } from '@/components/Container';
 import { CopyButton } from '@/components/CopyButton';
-import { getPhrase } from '@/services/phrase-api/functions/getPhrase';
 
 export default async function Home() {
-  const { phrase } = await getPhrase();
+  const phrase = 'scull rock wagon';
 
   return (
     <Container

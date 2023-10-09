@@ -6,54 +6,45 @@ export default function Rules() {
       <h1>Regras</h1>
 
       <p>
-        No caso de uma redução no número de dias, conforme decidido pela maioria
-        dos votos, o período mínimo estabelecido será de 3 dias.
+        - Para participar da aposta, é necessário frequentar a academia pelo
+        menos <strong>4 dias por semana</strong>.
       </p>
 
       <p>
-        Exercitar-se 4 dias na semana por 6 meses, sendo que ao menos 2 dias
-        precisam ser na academia.
+        - Para validar um dia de exercício, você deve enviar uma foto no grupo
+        com a palavra do dia escrita em um papel ou gravar um vídeo dizendo a
+        palavra enquanto estiver na academia (com algum equipamento visível) e
+        com uma parte do seu corpo visível para comprovar sua identidade, como o
+        rosto, tatuagens, ou algo similar.
       </p>
 
       <p>
-        Para comprovar e valer o dia, é necessário mandar uma foto no grupo com
-        a palavra do dia escrita em um papel ou um vídeo falando a palavra,
-        estando dentro da academia (com algum equipamento visível), e com alguma
-        região do corpo que comprove ser a pessoa, exemplo, rosto, tatuagens
-        e/ou afins. Para os dias do esporte a mesma regra é valida, com a
-        foto/vídeo do esporte sendo praticado, a palavra do dia e a comprovação
-        de ser a pessoa.
+        - Durante semanas que incluam feriados, um dia de exercício será
+        desconsiderado. Por exemplo, se houver um feriado em uma semana, você
+        precisará se exercitar apenas 3 dias.
       </p>
 
-      <p>
-        Os exercícios fora da academia, precisam ser para o corpo, esportes
-        mentais como xadrez, video-game ou afins, não valerão para a aposta.
-      </p>
+      <p>- A semana da aposta começa na segunda-feira e termina no domingo.</p>
 
       <p>
-        Para cada feriado na semana, um dia de exercício será eliminado,
-        exemplo: Na semana de 7 de abril vamos precisar nos exercitar 3 dias.
-      </p>
-
-      <p>A semana inicia-se no domingo e encerra-se no sábado. </p>
-
-      <p>
-        Poderão ser adicionadas novas regras ao decorrer da aposta caso
-        percebamos algum furo, mas para ser adicionada vamos utilizar da
-        democracia, a maioria vence.
+        - Novas regras podem ser adicionadas ao longo da aposta, caso sejam
+        identificados quaisquer problemas ou necessidades de ajustes.
       </p>
 
       <hr />
 
-      <h2>Pagamento</h2>
+      <h2>Procedimento de Pagamento</h2>
 
-      <p>O pagamento será feito no final da aposta. </p>
+      <p>
+        Caso alguém venha a perder, o pagamento será realizado ao final da
+        aposta.
+      </p>
 
       <hr />
 
-      <h2>Data</h2>
-      <p>Inicio da aposta: 27/02/2023</p>
-      <p>Fim da aposta: 27/08/2023 </p>
+      <h2>Datas da Aposta</h2>
+      <p>Início da aposta: 09/10/2023</p>
+      <p>Término da aposta: 09/11/2023</p>
     </Container>
   );
 }

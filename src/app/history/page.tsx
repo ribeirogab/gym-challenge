@@ -1,14 +1,13 @@
 import { Container } from '@/components/Container';
-import { getPhrase } from '@/services/phrase-api/functions/getPhrase';
 
 export default async function History() {
-  const { history } = await getPhrase();
-
   return (
     <Container className="flex min-h-screen flex-col gap-4">
       <h1>Histórico</h1>
 
-      <div className="mx-[-1rem] overflow-x-auto">
+      <p>Em desenvolvimento...</p>
+
+      {/* <div className="mx-[-1rem] overflow-x-auto">
         <table className="table w-full">
           <thead>
             <tr>
@@ -32,7 +31,7 @@ export default async function History() {
             })}
           </tbody>
         </table>
-      </div>
+      </div> */}
     </Container>
   );
 }
