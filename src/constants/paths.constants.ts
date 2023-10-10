@@ -4,4 +4,5 @@ export enum PathsEnum {
   History = '/history',
 }
 
-export const publicUrl = process.env.NEXT_PUBLIC_URL;
+export const apiUrl =
+  'https://vrblu4era2.execute-api.us-east-1.amazonaws.com/prod';

@@ -1,8 +1,9 @@
 import { Container } from '@/components/Container';
 import { CopyButton } from '@/components/CopyButton';
+import { getLatestPhrase } from '@/services/phrase-api/functions';
 
 export default async function Home() {
-  const phrase = 'scull rock wagon';
+  const { phrase } = await getLatestPhrase();
 
   return (
     <Container
@@ -12,11 +13,11 @@ export default async function Home() {
       )}
     >
       <p className="mt-[-12rem] text-center text-2xl font-bold lowercase">
-        {phrase}
+        {phrase.text}
       </p>
 
       <div className="fixed bottom-0 left-0 flex w-full p-8">
-        <CopyButton text={phrase}>copy</CopyButton>
+        <CopyButton text={phrase.text}>copy</CopyButton>
       </div>
     </Container>
   );
