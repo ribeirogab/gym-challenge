@@ -19,8 +19,8 @@ export default async function Home() {
         {phrase.text}
       </p>
 
-      <div className="custom-image-animation mt-[6rem]">
-        <Image alt="nub" src={nub} width={60} height={60} />
+      <div className="custom-image-animation mt-[4rem]">
+        <Image alt="nub" src={nub} width={150} height={150} />
       </div>
 
       <div className="fixed bottom-0 left-0 flex w-full p-8">
