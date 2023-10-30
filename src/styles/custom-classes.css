@@ -16,10 +16,29 @@
   }
 }
 
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 .custom-alert-animation {
   animation: alertShowAnimation 4s forwards;
 }
 
 .custom-screen-100vh-without-header {
   height: calc(100vh - 6rem);
+}
+
+.custom-image-animation {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
