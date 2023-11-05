@@ -5,4 +5,4 @@ export enum PathsEnum {
 }
 
 export const apiUrl =
-  'https://vrblu4era2.execute-api.us-east-1.amazonaws.com/prod';
+  'https://5muq8ewuq6.execute-api.us-east-1.amazonaws.com/prod';
