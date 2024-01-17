@@ -16,7 +16,7 @@ export default async function Home() {
       )}
     >
       <p className="mt-[-12rem] text-center text-2xl font-bold lowercase">
-        {phrase.text}
+        {phrase?.text}
       </p>
 
       <div className="custom-image-animation mt-[4rem]">
@@ -24,7 +24,7 @@ export default async function Home() {
       </div>
 
       <div className="fixed bottom-0 left-0 flex w-full p-8">
-        <CopyButton text={phrase.text}>copy</CopyButton>
+        <CopyButton text={phrase?.text}>copy</CopyButton>
       </div>
     </Container>
   );
